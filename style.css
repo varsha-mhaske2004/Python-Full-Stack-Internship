@@ -1,0 +1,143 @@
+body {
+ background-color:lightblue;
+ font-family:Arial,sans-serif;
+ text-align:center;
+}
+
+h1 {
+   color:darkblue;  
+}
+
+p {
+    color:darkgreen;
+    font-size:18px;
+}
+
+/* Student Registration Form */
+
+form {
+width:350px;
+margin:20px auto;
+padding:20px;
+background-color: white;
+border-radius:10px;
+box-shadow: 0 2px 8px gray;
+}
+
+label {
+    display:block;
+    margin-top:10px;
+    text-align:left;
+}
+
+input,
+select {
+    width:100%;
+    padding:8px;
+    margin-top:5p;
+    box-sizing:border-box;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+button {
+    width:200%;
+    padding:10px;
+    margin-top:15px;
+    background-color: darkblue;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button :hover {
+background-color: blue;
+}
+
+.gender-option label {
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+    margin-top:5px;
+}
+
+.gender-options input {
+    width:auto;
+    margin:0;
+}
+
+.navbar {
+    background-color:navy;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+.navbar a {
+    color:white;
+    text-decoration:none;
+}
+
+.navbar a:hover {
+color:yellow;
+}
+
+/* Flexbox Cards */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Arrange cards side by side */
+main {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+}
+
+/* Responsive Design */
+@media(max_width:600px) {
+    .navbar {
+        flex-direction:column;
+        gap:10px;
+    
+    }
+     .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+     .card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    form {
+        width: auto;
+        margin: 15px;
+    }
+img {
+        max-width: 100%;
+        height: auto;
+    }
+}
