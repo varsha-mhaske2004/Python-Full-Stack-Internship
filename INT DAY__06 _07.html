@@ -1,0 +1,175 @@
+<!-- task1=create a personal profile page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>My Personal Profile</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <h2>My Website</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#register">Registration</a></li>
+            <li><a href="#records"> Student Records</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>My Personal Profile</h1>
+        <img src="profile.jpg" alt="Varsha Profile Photo"
+             width="200" height="200">
+
+        <h2>Varsha Mhaske</h2>
+        <p>Computer Science Engineer | Python Full Stack Learner</p>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="profile">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Varsha Mhaske.
+                I have completed my BE in Computer Science Engineering.
+                I am learning Python Full Stack Development and
+                interested in SQL and Data Analysis.
+            </p>
+        </section>
+        
+        <section class="card">
+            <h2>Education</h2>
+            <ul>
+                <li>BE - Computer Science Engineering</li>
+                <li>HSC - 82.67%</li>
+                <li>SSC - 87.80%</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>NumPy</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>My Interests</h2>
+            <p>Data Analysis, Programming and Learning New Technologies</p>
+        </section>
+
+        <section>
+            <h2>Contact Information</h2>
+            <p>Email: varshamhaske2004@gmail.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Varsha Mhaske</p>
+    </footer>
+
+
+
+<hr>
+
+<!--task2= Student Registration Form -->
+
+
+<section id="register">
+    <h2>Student Registration Form</h2>
+
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option>Python Full Stack</option>
+            <option>Data Analytics</option>
+            <option>Web Development</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </form>
+</section>
+
+    <hr>
+
+    <!--  task3=student record table -->
+    <section id="records">
+        <h2>Student Records</h2>
+
+        <table border="1" cellpadding="10">
+            <caption>Student Information</caption>
+
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Varsha</td>
+                    <td>Python</td>
+                    <td>85</td>
+                </tr>
+
+                <tr>
+                    <td>102</td>
+                    <td>Adi</td>
+                    <td>SQL</td>
+                    <td>90</td>
+                </tr>
+
+                <tr>
+                    <td>103</td>
+                    <td>Priya</td>
+                    <td>HTML</td>
+                    <td>78</td>
+                </tr>
+
+                <tr>
+                    <td>104</td>
+                    <td>Riya</td>
+                    <td>Python</td>
+                    <td>95</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
